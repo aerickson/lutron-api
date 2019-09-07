@@ -2,6 +2,8 @@ import getpass
 import sys
 import telnetlib
 
+# TODO: remove initial "GNET> "
+
 HOST = "lutron"
 user = "lutron"
 password = "integration"
@@ -13,11 +15,6 @@ tn.write(user + "\n")
 if password:
     tn.read_until("password: ")
     tn.write(password + "\n")
-
-# tn.write("ls\n")
-# tn.write("exit\n")
-
-# print tn.read_all()
 
 while True:
     line = tn.read_until("\n")  # Read one line
