@@ -24,10 +24,17 @@ The latest build of this project is also available as a Docker image from Docker
 
 ## Usage
 
-### CLI
+### Command Line Utility
 
 ```
 ./cli.py --host 192.168.0.40 send OUTPUT 9 1 100.00
+```
+
+### Watching Output
+
+```
+# edit watch.py and set your host
+./watch.py
 ```
 
 ### Macros
